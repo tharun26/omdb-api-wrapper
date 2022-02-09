@@ -1,24 +1,38 @@
-# README
+# OMDB API Wrapper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+OMDB API Wrapper let developers interact with OMDB API.
+Deployed on Heroku:  
+##
 
-Things you may want to cover:
+```
+Server URL: https://radiant-taiga-77307.herokuapp.com/
+```
 
+This API consists of two endpoints
+
+- GET /api/v1/movies/[id]
+- GET /api/v1/search?{title,year,type,page}
+
+#
 - Ruby version
+   ruby 2.6.9p207
+   
+- Rails version
+   Rails 6.0.4.4
 
-- System dependencies
+## Installation
 
-- Configuration
 
-- Database creation
+```bash
+bundle install
+```
+## Test
 
-- Database initialization
+```bash
+rake test
+```
+## Server
 
-- How to run the test suite
-
-- Services (job queues, cache servers, search engines, etc.)
-
-- Deployment instructions
-
-- ...
+```bash
+rails s
+```
